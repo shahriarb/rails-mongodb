@@ -1,5 +1,4 @@
 
-
 == Mongodb Rails Example App ==
 
 Benefits:
