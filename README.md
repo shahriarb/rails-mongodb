@@ -1,8 +1,8 @@
 
-
 == Mongodb Rails Example App ==
 
 Benefits:
+
 - Without Active record querying
 - No Sql
 - No migrations
@@ -16,11 +16,11 @@ Benefits:
   By mongoid process:
   ---------------------------
   
-  Create new app rails new sample 
+  - Create new app rails new sample --skip-active-record
   
-  gem 'mongoid'
+  - gem 'mongoid'
   
-  Generate mongoid config as mongoid.yml file keep it as usual.
+  - Generate mongoid config as mongoid.yml file keep it as usual.
   
   
   
