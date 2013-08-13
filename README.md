@@ -12,7 +12,7 @@ The following settings may be changed on a new branch. See below for naming and 
 
 | Branch           | master                     |
 | ---------------- |:--------------------------:|
-| Rails            | 3.2.14                     |
+| Rails            | 3.2.11                     |
 | Rack server      | Passenger                  |
 | Manifest file    | use_asset_pipeline = true  |
 | Deployment hooks | -                          |
