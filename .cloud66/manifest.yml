@@ -1,0 +1,14 @@
+production: 
+    rails: 
+        configuration:
+            use_asset_pipeline: true
+
+development: 
+    rails: 
+        configuration:
+            use_asset_pipeline: true
+
+staging: 
+    rails: 
+        configuration:
+            use_asset_pipeline: true
