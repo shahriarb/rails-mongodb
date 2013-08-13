@@ -4,7 +4,7 @@ This repository uses the following database, which should <i>not</i> be changed.
 <table>
   <tr>
     <td><b>Database</b></td>
-    <td>PostgreSQL</td>
+    <td>MongoDB</td>
   </tr>
 </table>
 
