@@ -1,8 +1,6 @@
 production:
       database: mongoid_rails_production
       host: <%= ENV['MONGOID_HOST'] %>
-      username: <%= ENV['MONGOID_USERNAME'] %>
-      password: <%= ENV['MONGOID_PASSWORD'] %>
 development:
   # Configure available database sessions. (required)
   sessions:
