@@ -1,3 +1,5 @@
+production:
+      database: mongoid_rails_production
 development:
   # Configure available database sessions. (required)
   sessions:
