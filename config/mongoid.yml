@@ -2,6 +2,8 @@ production:
   sessions:
     default:
       database: mongoid_rails_production
+      hosts:
+        - localhost:27017      
 development:
   # Configure available database sessions. (required)
   sessions:
