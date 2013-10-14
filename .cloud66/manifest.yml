@@ -2,13 +2,20 @@ production:
     rails: 
         configuration:
             use_asset_pipeline: true
-
+    mongodb: 
+        configuration: 
+            version: 2.4.6            
 development: 
     rails: 
         configuration:
             use_asset_pipeline: true
-
+    mongodb: 
+        configuration: 
+            version: 2.4.6 
 staging: 
     rails: 
         configuration:
             use_asset_pipeline: true
+    mongodb: 
+        configuration: 
+            version: 2.4.6 
