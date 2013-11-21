@@ -2,8 +2,7 @@ production:
   sessions:
     default:
       database: mongoid_rails_production
-      hosts:
-        - localhost:27017      
+      hosts: <%= "[#{ENV['MONGODB_ADDRESSES'].split(',').map {|addr| "\"#{addr}:27017\""}.join(',')}]" %>
 development:
   # Configure available database sessions. (required)
   sessions:
@@ -14,8 +13,7 @@ development:
       database: mongoid_rails_example_development
       # Provides the hosts the default session can connect to. Must be an array
       # of host:port pairs. (required)
-      hosts:
-        - localhost:27017
+      hosts: <%= "[#{ENV['MONGODB_ADDRESSES'].split(',').map {|addr| "\"#{addr}:27017\""}.join(',')}]" %>
       options:
         # Change whether the session persists in safe mode by default.
         # (default: false)
@@ -76,8 +74,7 @@ test:
   sessions:
     default:
       database: mongoid_rails_example_test
-      hosts:
-        - localhost:27017
+      hosts: <%= "[#{ENV['MONGODB_ADDRESSES'].split(',').map {|addr| "\"#{addr}:27017\""}.join(',')}]" %>
       options:
         consistency: :strong
         # In the test environment we lower the retries and retry interval to
