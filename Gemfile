@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.11'
 
 gem 'thin', ">= 1.5.0"
-gem 'mongoid', " >= 3.0.14"
+gem 'mongo'
 gem 'haml', ">= 3.1.7"
 gem 'bson_ext'
 # Bundle edge Rails instead:
