@@ -1,7 +1,7 @@
 production:
   sessions:
     default:
-      database: mongoid_rails_production
+      database: <%= ENV['MONGODB_DATABASE'] || 'dev' %>
       hosts: ["<%= ENV['MONGODB_ADDRESS']%>:27017"]
 development:
   # Configure available database sessions. (required)
