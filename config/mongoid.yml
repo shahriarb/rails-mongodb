@@ -1,8 +1,17 @@
 production:
   sessions:
     default:
-      database: <%= ENV['MONGODB_DATABASE'] || "dev" %>
-      hosts: ["<%= ENV['MONGODB_ADDRESS']%>:27017"]
+      database: <%= ENV['MONGODB_DATABASE'] || "test_production" %>
+      username: <%= ENV['MONGODB_USERNAME'] %>
+      password: <%= ENV['MONGODB_PASSWORD'] %>
+      hosts:
+        - <%= ENV['MONGODB_ADDRESS']%>:27017
+      options:
+        consistency: :strong
+
+  options:
+    identity_map_enabled: true
+    raise_not_found_error: false
 development:
   # Configure available database sessions. (required)
   sessions:
