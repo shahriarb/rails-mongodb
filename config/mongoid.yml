@@ -1,11 +1,11 @@
 production:
   sessions:
     default:
-      database: <%= ENV['MONGODB_DATABASE'] || "test_production" %>
-      username: <%= ENV['MONGODB_USERNAME'] %>
-      password: <%= ENV['MONGODB_PASSWORD'] %>
+      database: <%= ENV['MONGO_DATABASE'] || "test_production" %>
+      username: <%= ENV['MONGO_USERNAME'] %>
+      password: <%= ENV['MONGO_PASSWORD'] %>
       hosts:
-        - <%= ENV['MONGODB_ADDRESS']%>:27017
+        - <%= ENV['MONGO_ADDRESS']%>:27017
       options:
         consistency: :strong
 
