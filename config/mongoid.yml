@@ -19,14 +19,14 @@ development: &development
     default:
       # Defines the name of the default database that Mongoid can connect to.
       # (required).
-      database: <%= ENV['MONGO_DATABASE'] || 'test' %>
-      username: <%= ENV['MONGO_USERNAME'] %>
-      password: <%= ENV['MONGO_PASSWORD'] %>
+      database: <%= ENV['MONGODB_DATABASE'] || 'test' %>
+      username: <%= ENV['MONGODB_USERNAME'] %>
+      password: <%= ENV['MONGODB_PASSWORD'] %>
 #      database: glacial-scrubland-1746
       # Provides the hosts the default session can connect to. Must be an array
       # of host:port pairs. (required)
       hosts:
-        - <%= ENV['MONGO_HOST'] || 'localhost:27017' %>
+        - <%= ENV['MONGODB_HOST'] || 'localhost:27017' %>
       options:
         # Change whether the session persists in safe mode by default.
         # (default: false)
@@ -81,7 +81,7 @@ development_with_caching:
   <<: *development
   sessions:
     default:
-      database: <%= ENV['MONGO_DATABASE'] || 'test_dev' %>
+      database: <%= ENV['MONGODB_DATABASE'] || 'test_dev' %>
       hosts:
         - localhost:27017
       options:
