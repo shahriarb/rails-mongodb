@@ -20,10 +20,8 @@ development: &development
       # Defines the name of the default database that Mongoid can connect to.
       # (required).
       database: <%= ENV['MONGO_DATABASE'] || 'test' %>
-      <% unless ENV['MONGO_USERNAME'].blank? %>
       username: <%= ENV['MONGO_USERNAME'] %>
       password: <%= ENV['MONGO_PASSWORD'] %>
-      <% end %>
 #      database: glacial-scrubland-1746
       # Provides the hosts the default session can connect to. Must be an array
       # of host:port pairs. (required)
