@@ -1,8 +1,11 @@
 production:
   sessions:
     default:
-      database: mongoid_rails_production
-      hosts: ["<%= ENV['MONGODB_ADDRESS']%>:27017"]
+      database: <%= ENV['MONGODB_DATABASE'] %>
+      hosts:
+        - "<%= ENV['MONGODB_ADDRESS_INT'] %>:27017"
+      options:
+        pool_size: 35
 development:
   # Configure available database sessions. (required)
   sessions:
