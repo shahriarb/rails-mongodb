@@ -78,9 +78,7 @@ test:
 staging:
   sessions:
     default:
-      database: <%= ENV['MONGODB_DATABASE'] %>
-      hosts:
-        - localhost:27017
+      uri: 'somewhere else'
       options:
         read: primary
 production:
