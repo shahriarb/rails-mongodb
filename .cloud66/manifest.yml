@@ -2,6 +2,9 @@ production:
     rails: 
         configuration:
             use_asset_pipeline: true
+    mongodb:
+        configuration:
+            version: 3.0.4
 
 development: 
     rails: 
